@@ -1,0 +1,15 @@
+{% extends 'users/layout.html' %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+    <div align="center"><h3>Создание нового аккаунта</h3></div>
+
+    <form class="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn" type="submit">Регистрация</button>
+    </form>
+
+    <div align="center">Уже есть учетная запись? <a href="{% url 'login' %}">Войдите</a></div>
+{% endblock %}

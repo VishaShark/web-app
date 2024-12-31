@@ -1,0 +1,11 @@
+{% extends 'users/layout.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+    <h2>Профиль пользователя</h2>
+    <p><strong>Имя:</strong> {{user.name}}</p>
+    <p><strong>Email:</strong> {{user.email}}</p>
+    <p><strong>О пользователе:</strong> {{user.about}}</p>
+    <a href="{% url 'login' %}">Выйти</a>
+{% endblock %}

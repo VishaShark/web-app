@@ -1,0 +1,51 @@
+body {
+  background: url(../img/bg.jpg);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  border-radius: 15px;
+  max-width: 320px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #b8eef5;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  
+  border: 1px solid #ccc;
+  
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  
+  border: 0;
+  background-color: #fcd19f;
+  cursor: pointer;
+  
+  font-family: inherit;
+  font-size: 16px;
+  color: #000;
+}
+
+.btn:hover {
+  background-color: #f2b977;
+}
+
+img {
+   width: 100%;
+}

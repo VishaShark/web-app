@@ -1,0 +1,21 @@
+{% extends 'users/layout.html' %}
+
+<!--{% block header %}
+    <header>
+        <img src="static/users/img/girlanda.gif">
+    </header>
+{% endblock %}-->
+
+{% block title %}Вход в систему{% endblock %}
+
+{% block content %}
+    <div align="center"><h3>Вход в систему</h3></div>
+
+		<form class="form" action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn" type="submit">Войти</button>
+		</form>
+
+    <div align="center">Нет аккаунта? <a href="{% url 'registration' %}">Регистрация</a></div>
+{% endblock %}

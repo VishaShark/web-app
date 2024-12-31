@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'users/css/style.css' %}">
+</head>
+<body>
+    {% block header %}
+        <header>
+            <img src="static/users/img/girlanda.gif">
+        </header>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
